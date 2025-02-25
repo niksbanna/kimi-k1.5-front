@@ -152,7 +152,7 @@
     messages.value.push({ role: 'user', content: userMessage })
 
     try {
-      const response = await fetch('http://localhost:3000/api/chat', {
+      const response = await fetch('https://kimi-k1-5-backend.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
