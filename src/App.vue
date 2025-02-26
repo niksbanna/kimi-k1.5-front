@@ -58,7 +58,7 @@
           <!-- Streaming content -->
           <div v-if="streamingContent" class="flex justify-start">
             <div 
-              class="bg-[#FFF2AF] rounded-2xl rounded-bl-sm px-4 py-2 max-w-[85%] shadow-sm prose prose-sm"
+              class="bg-[#FFF2AF] text-gray-800 rounded-2xl rounded-bl-sm px-4 py-2 max-w-[85%] shadow-sm prose prose-sm"
               v-html="formatMessage(streamingContent)"
             ></div>
           </div>
@@ -82,7 +82,7 @@
             <input
               type="text"
               v-model="input"
-              class=" text-black flex-1 p-3 border border-[#B2A5FF] rounded-xl focus:ring-2 focus:ring-[#493D9E] focus:border-[#493D9E] outline-none transition-all bg-white/90"
+              class="text-gray-800 flex-1 p-3 border border-[#B2A5FF] rounded-xl focus:ring-2 focus:ring-[#493D9E] focus:border-[#493D9E] outline-none transition-all bg-white/90"
               placeholder="Type your message..."
               :disabled="isLoading"
             />
@@ -480,9 +480,5 @@
 
   button.absolute:hover {
     transform: scale(1.1);
-  }
-
-  .text-black {
-    color: black;
   }
   </style>
